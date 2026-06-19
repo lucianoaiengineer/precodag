@@ -1,0 +1,15 @@
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+logs/
+*.log
+.DS_Store
+.vscode/
+
+# Relatórios locais de diagnóstico e validação
+diagnostico_*.txt
+validacao_*.txt
+erro_*.txt
+auditoria_*.txt
