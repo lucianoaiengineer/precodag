@@ -272,10 +272,18 @@ instalar Apache Airflow diretamente no Windows ou no Ubuntu.
 No terminal Ubuntu/WSL:
 
 ```bash
-cd /mnt/c/Users/Luciano/Desktop/Projetos/precodag
+# Navegue até a pasta onde você clonou o projeto
+cd /caminho/ate/a/pasta/do/projeto
+
+# Copie o arquivo de exemplo de variáveis de ambiente
 cp .env.example .env
+
+# Inicialize o banco de dados do Airflow
 docker compose up airflow-init
+
+# Suba os containers em segundo plano
 docker compose up -d
+
 ```
 
 O serviço `airflow-init` deve terminar com código zero após preparar os
